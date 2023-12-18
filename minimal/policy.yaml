@@ -24,9 +24,9 @@ sources:
   - name: Default
     policy:
       - github.com/enterprise-contract/ec-policies//policy/lib
-      - github.com/enterprise-contract/ec-policies//policy/release
+      - https://raw.githubusercontent.com/enterprise-contract/ec-policies/main/policy/release/test.rego
     data:
-      - github.com/enterprise-contract/ec-policies//data
+      - quay.io/enterprise-contract/ec-policy-data:latest
 
 configuration:
   include:
