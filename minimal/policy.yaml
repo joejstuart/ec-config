@@ -24,7 +24,7 @@ sources:
   - name: Default
     policy:
       - github.com/enterprise-contract/ec-policies//policy/lib
-      - https://github.com/enterprise-contract/ec-policies/main/policy/release/test.rego
+      - https://raw.githubusercontent.com/enterprise-contract/ec-policies/main/policy/release/test.rego
     data:
       - github.com/enterprise-contract/ec-policies//data
 
