@@ -21,9 +21,6 @@ Includes rules for levels 1, 2 & 3 of SLSA v0.1. This is the default config used
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//default`
 * Source: [default/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default/policy.yaml)
 * Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract.yaml)
 
 ### Everything (experimental)
 
@@ -32,9 +29,6 @@ Include every rule in the default policy source. For experiments only. This is n
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//everything`
 * Source: [everything/policy.yaml](https://github.com/enterprise-contract/config/blob/main/everything/policy.yaml)
 * Collections:
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract-everything.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract-everything.yaml)
 
 ### Red Hat
 
@@ -43,9 +37,6 @@ Includes the full set of rules and policies required internally by Red Hat when 
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//redhat`
 * Source: [redhat/policy.yaml](https://github.com/enterprise-contract/config/blob/main/redhat/policy.yaml)
 * Collections: [@redhat](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#redhat)
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract-redhat.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract-redhat.yaml)
 
 ### Red Hat (non hermetic)
 
@@ -54,9 +45,6 @@ Includes most of the rules and policies required internally by Red Hat when buil
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//redhat-no-hermetic`
 * Source: [redhat-no-hermetic/policy.yaml](https://github.com/enterprise-contract/config/blob/main/redhat-no-hermetic/policy.yaml)
 * Collections: [@redhat](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#redhat)
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract-redhat-no-hermetic.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract-redhat-no-hermetic.yaml)
 
 ### SLSA3
 
@@ -65,9 +53,6 @@ Rules specifically related to levels 1, 2 & 3 of SLSA v0.1, plus a set of basic 
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//slsa3`
 * Source: [slsa3/policy.yaml](https://github.com/enterprise-contract/config/blob/main/slsa3/policy.yaml)
 * Collections: [@minimal](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#minimal), [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract-slsa3.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract-slsa3.yaml)
 
 
 ## Konflux CI & Red Hat Trusted Application Pipeline (RHTAP) - Tasks

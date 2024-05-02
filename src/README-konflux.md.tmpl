@@ -11,7 +11,4 @@
     [{{ . }}](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#{{ strings.TrimPrefix "@" . }})
   {{- end -}}
 {{- end }}
-* Konflux Integration Test pipeline definition:
-  * Github URL: `https://github.com/redhat-appstudio/build-definitions`
-  * Path in repository: [`pipelines/enterprise-contract{{ if ne $.directory "default" }}-{{ $.directory }}{{ end }}.yaml`](https://github.com/redhat-appstudio/build-definitions/blob/main/pipelines/enterprise-contract{{ if ne $.directory "default" }}-{{ $.directory }}{{ end }}.yaml)
 {{- end }}
