@@ -13,6 +13,10 @@
 #       value: github.com/enterprise-contract/config//redhat
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/redhat` as
+# the param value instead of the GitHub URL.
+#
 name: Red Hat
 description: >-
   Includes the full set of rules and policies required internally by Red Hat when building Red Hat products.

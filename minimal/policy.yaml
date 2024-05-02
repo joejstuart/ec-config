@@ -15,6 +15,10 @@
 #       value: github.com/enterprise-contract/config//minimal
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/minimal` as
+# the param value instead of the GitHub URL.
+#
 name: Minimal (deprecated)
 description: >-
   Includes a set of basic checks that are expected to pass for all Konflux builds.

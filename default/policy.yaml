@@ -13,6 +13,10 @@
 #       value: github.com/enterprise-contract/config//default
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/default` as
+# the param value instead of the GitHub URL.
+#
 name: Default
 description: >-
   Includes rules for levels 1, 2 & 3 of SLSA v0.1. This is the default config used for new Konflux applications.
