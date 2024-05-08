@@ -13,6 +13,10 @@
 #       value: github.com/enterprise-contract/config//redhat-no-hermetic
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/redhat-no-hermetic` as
+# the param value instead of the GitHub URL.
+#
 name: Red Hat (non hermetic)
 description: >-
   Includes most of the rules and policies required internally by Red Hat when building Red Hat products. It excludes the requirement of hermetic builds.

@@ -13,6 +13,10 @@
 #       value: github.com/enterprise-contract/config//everything
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/everything` as
+# the param value instead of the GitHub URL.
+#
 name: Everything (experimental)
 description: >-
   Include every rule in the default policy source. For experiments only. This is not expected to pass for Konflux builds without excluding some rules.

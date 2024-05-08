@@ -18,6 +18,10 @@
 #       value: github.com/enterprise-contract/config//{{ $.directory }}
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/{{ $.directory }}` as
+# the param value instead of the GitHub URL.
+#
 name: {{.name}}
 description: >-
   {{ .description }}

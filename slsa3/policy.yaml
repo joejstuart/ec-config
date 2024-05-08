@@ -13,6 +13,10 @@
 #       value: github.com/enterprise-contract/config//slsa3
 #     ...
 #
+# In Konflux there is also an EnterpriseContractPolicy CRD containing this policy.
+# You can use it by specifying `enterprise-contract-service/slsa3` as
+# the param value instead of the GitHub URL.
+#
 name: SLSA3
 description: >-
   Rules specifically related to levels 1, 2 & 3 of SLSA v0.1, plus a set of basic checks that are expected to pass for all Konflux builds.
