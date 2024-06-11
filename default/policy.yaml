@@ -24,7 +24,7 @@
 name: Default
 description: >-
   Includes rules for levels 1, 2 & 3 of SLSA v0.1. This is the default config used for new Konflux applications.
-  (Originally defined in https://github.com/enterprise-contract/config/blob/main/default/policy.yaml )
+  Source: https://github.com/enterprise-contract/config/blob/main/default/policy.yaml
 
 sources:
   - name: Default

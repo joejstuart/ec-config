@@ -24,7 +24,7 @@
 name: Red Hat
 description: >-
   Includes the full set of rules and policies required internally by Red Hat when building Red Hat products.
-  (Originally defined in https://github.com/enterprise-contract/config/blob/main/redhat/policy.yaml )
+  Source: https://github.com/enterprise-contract/config/blob/main/redhat/policy.yaml
 
 sources:
   - name: Default

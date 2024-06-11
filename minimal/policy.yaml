@@ -26,7 +26,7 @@
 name: Minimal (deprecated)
 description: >-
   Includes a set of basic checks that are expected to pass for all Konflux builds.
-  (Originally defined in https://github.com/enterprise-contract/config/blob/main/minimal/policy.yaml )
+  Source: https://github.com/enterprise-contract/config/blob/main/minimal/policy.yaml
 
 sources:
   - name: Default
