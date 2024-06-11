@@ -22,14 +22,14 @@
 # You can use it by specifying `enterprise-contract-service/{{ $.directory }}` as
 # the param value instead of the GitHub URL.
 #
+# See also:
+# - https://enterprisecontract.dev/docs/ec-policies/release_policy.html#_available_rule_collections
+# - https://enterprisecontract.dev/docs/ec-cli/main/configuration.html
+#
 name: {{.name}}
 description: >-
   {{ .description }}
-  Available collections are defined in
-  https://enterprisecontract.dev/docs/ec-policies/release_policy.html#_available_rule_collections.
-  If a different policy configuration is desired, this resource can serve as a starting point.
-  See the docs on how to include and exclude rules at
-  https://enterprisecontract.dev/docs/ec-cli/main/configuration.html.
+  (Originally defined in https://github.com/enterprise-contract/config/blob/main/{{ $.directory }}/policy.yaml )
 
 sources:
   - name: Default
