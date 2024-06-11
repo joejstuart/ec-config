@@ -24,7 +24,7 @@
 name: SLSA3
 description: >-
   Rules specifically related to levels 1, 2 & 3 of SLSA v0.1, plus a set of basic checks that are expected to pass for all Konflux builds.
-  (Originally defined in https://github.com/enterprise-contract/config/blob/main/slsa3/policy.yaml )
+  Source: https://github.com/enterprise-contract/config/blob/main/slsa3/policy.yaml
 
 sources:
   - name: Default

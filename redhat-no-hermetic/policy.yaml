@@ -24,7 +24,7 @@
 name: Red Hat (non hermetic)
 description: >-
   Includes most of the rules and policies required internally by Red Hat when building Red Hat products. It excludes the requirement of hermetic builds.
-  (Originally defined in https://github.com/enterprise-contract/config/blob/main/redhat-no-hermetic/policy.yaml )
+  Source: https://github.com/enterprise-contract/config/blob/main/redhat-no-hermetic/policy.yaml
 
 sources:
   - name: Default
