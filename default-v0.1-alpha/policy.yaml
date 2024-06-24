@@ -1,0 +1,21 @@
+#
+# To use this policy with the ec command line:
+#   ec validate image \
+#     --image $IMAGE \
+#     --public-key key.pub \
+#     --policy github.com/enterprise-contract/config//default-v0.1-alpha
+#
+name: Default (v0.1-alpha)
+description: >-
+  Includes rules for levels 1, 2 & 3 of SLSA v0.1. For use with ec version v0.1-alpha.
+
+sources:
+  - name: Default
+    policy:
+      - github.com/enterprise-contract/ec-policies//policy/lib?ref=release-v0.1-alpha
+      - github.com/enterprise-contract/ec-policies//policy/release?ref=release-v0.1-alpha
+    data: []
+    config:
+      include:
+        - '@slsa3'
+      exclude: []

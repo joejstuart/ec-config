@@ -39,5 +39,4 @@ sources:
     config:
       include:
         - '@minimal'
-      exclude:
-        []
+      exclude: []

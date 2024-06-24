@@ -22,14 +22,6 @@ Includes rules for levels 1, 2 & 3 of SLSA v0.1. This is the default config used
 * Source: [default/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default/policy.yaml)
 * Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
 
-### Everything (experimental)
-
-Include every rule in the default policy source. For experiments only. This is not expected to pass for Konflux builds without excluding some rules.
-
-* URL for Enterprise Contract: `github.com/enterprise-contract/config//everything`
-* Source: [everything/policy.yaml](https://github.com/enterprise-contract/config/blob/main/everything/policy.yaml)
-* Collections:
-
 ### Red Hat
 
 Includes the full set of rules and policies required internally by Red Hat when building Red Hat products.
@@ -53,6 +45,46 @@ Rules specifically related to levels 1, 2 & 3 of SLSA v0.1, plus a set of basic 
 * URL for Enterprise Contract: `github.com/enterprise-contract/config//slsa3`
 * Source: [slsa3/policy.yaml](https://github.com/enterprise-contract/config/blob/main/slsa3/policy.yaml)
 * Collections: [@minimal](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#minimal), [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
+
+
+## Stable (versioned policies)
+
+The main branch of the [enterprise-contract/ec-policies](https://github.com/enterprise-contract/ec-policies)
+is always tested with the [latest build of ec-cli](https://github.com/enterprise-contract/ec-cli/releases). If
+your environment uses a specific version of ec-cli, such as
+[the official Red Hat build](https://catalog.redhat.com/software/containers/rhtas/ec-rhel9/65f1f9dcfc649a18c6075de5),
+then you can use one of these instead of the
+[main branch default](https://github.com/enterprise-contract/config?tab=readme-ov-file#default).
+
+They are similar to the [Konflux CI "default"](#default) configuration except they use a specific branch
+of the policies repo for stability and compatiblity with specific verisons of ec. These configurations are
+suggested for use in [Red Hat Trusted Application Pipeline](https://developers.redhat.com/products/trusted-application-pipeline/overview) templates.
+
+The policy configuration files are:
+
+### Default (v0.1-alpha)
+
+Includes rules for levels 1, 2 & 3 of SLSA v0.1. For use with ec version v0.1-alpha.
+
+* URL for Enterprise Contract: `github.com/enterprise-contract/config//default-v0.1-alpha`
+* Source: [default-v0.1-alpha/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default-v0.1-alpha/policy.yaml)
+* Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
+
+### Default (v0.2)
+
+Includes rules for levels 1, 2 & 3 of SLSA v0.1. For use with ec version v0.2.
+
+* URL for Enterprise Contract: `github.com/enterprise-contract/config//default-v0.2`
+* Source: [default-v0.2/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default-v0.2/policy.yaml)
+* Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
+
+### Default (v0.4)
+
+Includes rules for levels 1, 2 & 3 of SLSA v0.1. For use with ec version v0.4
+
+* URL for Enterprise Contract: `github.com/enterprise-contract/config//default-v0.4`
+* Source: [default-v0.4/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default-v0.4/policy.yaml)
+* Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
 
 
 ## Konflux CI & Red Hat Trusted Application Pipeline (RHTAP) - Tasks

@@ -16,5 +16,4 @@ sources:
     config:
       include:
         - kind
-      exclude:
-        []
+      exclude: []

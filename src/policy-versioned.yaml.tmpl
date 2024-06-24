@@ -17,12 +17,13 @@ description: >-
 sources:
   - name: Default
     policy:
-      - github.com/enterprise-contract/ec-policies//policy/lib
-      - github.com/enterprise-contract/ec-policies//policy/release
+      - github.com/enterprise-contract/ec-policies//policy/lib{{ with .ecPoliciesRef }}?ref={{ . }}{{ end }}
+      - github.com/enterprise-contract/ec-policies//policy/release{{ with .ecPoliciesRef }}?ref={{ . }}{{ end }}
     data: []
     config:
       include:
         {{ .include | toYAML | strings.Indent 8 | strings.TrimSpace }}
       {{ if eq (len .exclude) 0 }}exclude: []{{ else }}exclude:
         {{ .exclude | toYAML | strings.Indent 8 | strings.TrimSpace }}{{ end }}
+
 {{- end -}}
