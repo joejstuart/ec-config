@@ -22,14 +22,6 @@ Includes rules for levels 1, 2 & 3 of SLSA v0.1. This is the default config used
 * Source: [default/policy.yaml](https://github.com/enterprise-contract/config/blob/main/default/policy.yaml)
 * Collections: [@slsa3](https://enterprisecontract.dev/docs/ec-policies/release_policy.html#slsa3)
 
-### Everything (experimental)
-
-Include every rule in the default policy source. For experiments only. This is not expected to pass for Konflux builds without excluding some rules.
-
-* URL for Enterprise Contract: `github.com/enterprise-contract/config//everything`
-* Source: [everything/policy.yaml](https://github.com/enterprise-contract/config/blob/main/everything/policy.yaml)
-* Collections:
-
 ### Red Hat
 
 Includes the full set of rules and policies required internally by Red Hat when building Red Hat products.

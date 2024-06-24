@@ -86,7 +86,8 @@
     "include": [
       "*"
     ],
-    "exclude": []
+    "exclude": [],
+    "deprecated": true
   },
   "redhat-trusted-tasks": {
     "name": "Red Hat Trusted Tasks",
