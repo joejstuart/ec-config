@@ -38,5 +38,4 @@ sources:
       include:
         - '@minimal'
         - '@slsa3'
-      exclude:
-        []
+      exclude: []
