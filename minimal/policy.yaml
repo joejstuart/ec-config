@@ -33,7 +33,7 @@ sources:
     volatileConfig:
       include:
       - value: '@minimal'
-        imageRef: 'sha256:cc92245b43fba20e7696ca20947fbe444c177fa2e241ea96285903dd049adf'
+        imageRef: 'sha256:cc92245b43fba20e7696ca20947fbe444c177fa2e241ea96285903dd049adf0'
     policy:
       - github.com/enterprise-contract/ec-policies//policy/lib
       - github.com/enterprise-contract/ec-policies//policy/release
