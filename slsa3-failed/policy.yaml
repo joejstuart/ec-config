@@ -30,14 +30,6 @@ description: >-
 
 sources:
   - name: Default
-    volatileConfig:
-      exclude:
-      - value: 'slsa_source_version_controlled.materials_format_okay'
-        imageRef: 'sha256:778e9753f03c8294b02aafd2f563dbd0dc8576ac607730b1af12d6bd1bf88364'
-      - value: 'slsa_source_correlated.source_code_reference_provided'
-        imageRef: 'sha256:778e9753f03c8294b02aafd2f563dbd0dc8576ac607730b1af12d6bd1bf88364'
-      - value: 'slsa_source_correlated.attested_source_code_reference'
-        imageRef: 'sha256:778e9753f03c8294b02aafd2f563dbd0dc8576ac607730b1af12d6bd1bf88364'
     policy:
       - github.com/enterprise-contract/ec-policies//policy/lib
       - github.com/enterprise-contract/ec-policies//policy/release
