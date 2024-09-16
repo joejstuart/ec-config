@@ -31,9 +31,6 @@ description: >-
 sources:
   - name: Default
     volatileConfig:
-      # include:
-      # - value: '@minimal'
-      #   imageRef: 'sha256:cc92245b43fba20e7696ca20947fbe444c177fa2e241ea96285903dd049adf07'
       exclude:
       - value: 'slsa_source_version_controlled.materials_format_okay'
         imageRef: 'sha256:778e9753f03c8294b02aafd2f563dbd0dc8576ac607730b1af12d6bd1bf88364'
@@ -43,3 +40,7 @@ sources:
     data:
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
       - github.com/release-engineering/rhtap-ec-policy//data
+    config:
+      include:
+      - '@slsa3' 
+
