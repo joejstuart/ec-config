@@ -39,6 +39,4 @@ sources:
     config:
       include:
       - '@redhat'
-      exclude:
-      - 'sbom_cyclonedx.found'
 
