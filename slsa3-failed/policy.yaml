@@ -38,5 +38,7 @@ sources:
       - github.com/release-engineering/rhtap-ec-policy//data
     config:
       include:
-      - '@slsa3' 
+      - '@redhat'
+      exclude:
+      - 'sbom_cyclonedx.found'
 
