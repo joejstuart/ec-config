@@ -27,13 +27,14 @@ name: Minimal (deprecated)
 description: >-
   Includes a set of basic checks that are expected to pass for all Konflux builds.
   Source: https://github.com/enterprise-contract/config/blob/main/minimal/policy.yaml
+publicKey: 'k8s://openshift-pipelines/public-key'
 sources:
   - name: Release Policies
     data:
       - github.com/release-engineering/rhtap-ec-policy//data
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
     policy:
-      - quay.io/enterprise-contract/ec-release-policy@sha256:18faef576c8d387d194509a951c902750cc809d3de7b6e5016fdafb1bb8b421f
+      - quay.io/enterprise-contract/ec-release-policy:konflux
     volatileConfig:
       exclude: []
     config:
