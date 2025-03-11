@@ -39,7 +39,5 @@ sources:
       exclude: []
     config:
       include:
-        - olm.inaccessible_related_images
-        - olm.unmapped_references
-        - attestation_type.known_attestation_type
+      - '@redhat'
       exclude: []
