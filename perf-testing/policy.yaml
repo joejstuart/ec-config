@@ -41,5 +41,5 @@ sources:
       exclude: []
     config:
       include:
-      - '@redhat'
+      - labels
       exclude: []
