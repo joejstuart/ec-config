@@ -35,6 +35,8 @@ sources:
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
     policy:
       - quay.io/enterprise-contract/ec-release-policy:konflux
+    ruleData:
+      pipeline_intention: release
     volatileConfig:
       exclude: []
     config:
