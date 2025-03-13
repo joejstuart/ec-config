@@ -32,11 +32,11 @@ sources:
   - name: Release Policies
     data:
       - github.com/release-engineering/rhtap-ec-policy//data
-#      - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles@sha256:3b6d1aac43eaadcd9f02aba596427f7c6ac5fabc56f29139cba75b5c458764fc
-      - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
+      - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles@sha256:3b6d1aac43eaadcd9f02aba596427f7c6ac5fabc56f29139cba75b5c458764fc
+#      - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
     policy:
-#      - quay.io/enterprise-contract/ec-release-policy@sha256:de9bc68814be08ddbe0e8c9dfe710a354d0e117614aa566c7587e3a781f8aca7
-      - quay.io/enterprise-contract/ec-release-policy:konflux
+      - quay.io/enterprise-contract/ec-release-policy@sha256:de9bc68814be08ddbe0e8c9dfe710a354d0e117614aa566c7587e3a781f8aca7
+#      - quay.io/enterprise-contract/ec-release-policy:konflux
     ruleData:
       pipeline_intention: release
     volatileConfig:
