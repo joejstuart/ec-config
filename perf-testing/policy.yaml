@@ -43,5 +43,5 @@ sources:
       exclude: []
     config:
       include:
-      - '@redhat'
+      - attestation_type.pipelinerun_attestation_found
       exclude: []
