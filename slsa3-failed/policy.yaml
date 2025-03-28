@@ -30,6 +30,9 @@ description: >-
 
 sources:
   - name: Default
+    ruleData:
+      allowed_registry_prefixes:
+      - quay.io/jstuart
     policy:
       - github.com/joejstuart/ec-policies//policy/lib?ref=sbom-trouble
       - github.com/joejstuart/ec-policies//policy/release?ref=sbom-trouble
