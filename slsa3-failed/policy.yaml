@@ -34,14 +34,15 @@ sources:
       allowed_registry_prefixes:
       - quay.io/jstuart
     policy:
-      - github.com/joejstuart/ec-policies//policy/lib?ref=sbom-trouble
-      - github.com/joejstuart/ec-policies//policy/release?ref=sbom-trouble
+      - github.com/enterprise-contract/ec-policies//policy/lib?ref=main
+      - github.com/enterprise-contract/ec-policies//policy/release?ref=main
     data:
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
       - github.com/release-engineering/rhtap-ec-policy//data
     config:
       include:
-      - '@redhat'
+      - '@minimal'
+      - '@slsa3'
     volatileConfig:
       exclude:
       - value: trusted_task.trusted
