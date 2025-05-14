@@ -41,8 +41,7 @@ sources:
       - github.com/release-engineering/rhtap-ec-policy//data
     config:
       include:
-      - '@minimal'
-      - '@slsa3'
+      - '@redhat'
     volatileConfig:
       exclude:
       - value: trusted_task.trusted
