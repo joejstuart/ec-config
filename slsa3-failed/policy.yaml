@@ -33,7 +33,7 @@ sources:
     ruleData:
       allowed_registry_prefixes:
       - quay.io/jstuart
-    pipeline_intention: release
+      pipeline_intention: release
     policy:
       - github.com/enterprise-contract/ec-policies//policy/lib?ref=main
       - github.com/enterprise-contract/ec-policies//policy/release?ref=main
