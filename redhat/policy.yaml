@@ -29,8 +29,8 @@ description: >-
 sources:
   - name: Default
     policy:
-      - github.com/conforma/policy//policy/lib
-      - github.com/conforma/policy//policy/release
+      - github.com/joejstuart/ec-policies//policy/lib?ref=no-snap-ref
+      - github.com/joejstuart/ec-policies//policy/release?ref=no-snap-ref
     data:
       - github.com/release-engineering/rhtap-ec-policy//data
       - oci::quay.io/konflux-ci/tekton-catalog/data-acceptable-bundles:latest
